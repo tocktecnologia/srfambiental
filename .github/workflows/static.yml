@@ -33,12 +33,14 @@ jobs:
       
       - name: Setup Pages
         uses: actions/configure-pages@v5
+        with:
+          enablement: true
       
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
           # Upload apenas a pasta do site estático
-          path: 'SITE-SRF-AMBIENTAL'
+          path: 'SITE-SR-AMBIENTAL'
       
       - name: Deploy to GitHub Pages
         id: deployment
