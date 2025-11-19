@@ -31,20 +31,6 @@ jobs:
       - name: Checkout
         uses: actions/checkout@v4
       
-      - name: List files for debugging
-        run: |
-          echo "📂 Listando arquivos do repositório:"
-          ls -la
-          echo "📂 Verificando se a pasta existe:"
-          if [ -d "SITE-SR-AMBIENTAL" ]; then
-            echo "✅ Pasta SITE-SR-AMBIENTAL encontrada!"
-            ls -la SITE-SR-AMBIENTAL/
-          else
-            echo "❌ Pasta SITE-SR-AMBIENTAL NÃO encontrada!"
-            echo "Arquivos disponíveis:"
-            find . -maxdepth 2 -type d
-          fi
-      
       - name: Setup Pages
         uses: actions/configure-pages@v5
         with:
@@ -53,8 +39,8 @@ jobs:
       - name: Upload artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          # Upload apenas a pasta do site estático
-          path: 'SITE-SR-AMBIENTAL'
+          # Upload a raiz do repositório (onde está o index.html)
+          path: '.'
       
       - name: Deploy to GitHub Pages
         id: deployment
