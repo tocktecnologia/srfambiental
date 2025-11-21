@@ -34,7 +34,15 @@ button {
 
 @media (max-width: 767px) {
   .container {
-    padding: 0 30px;
+    padding: 0 20px;
+  }
+
+  .pt-60 {
+    padding-top: 40px;
+  }
+
+  .pb-60 {
+    padding-bottom: 40px;
   }
 }
 
@@ -765,7 +773,7 @@ p {
 
 @media (max-width: 767px) {
   .hero-section-wrapper-2 .hero-style-2 .hero-content-wrapper {
-    padding: 150px 0 50px;
+    padding: 100px 0 30px;
   }
 }
 
@@ -795,8 +803,8 @@ p {
 
 @media (max-width: 767px) {
   .hero-section-wrapper-2 .hero-style-2 .hero-content-wrapper h2 {
-    font-size: 40px;
-    line-height: 50px;
+    font-size: 32px;
+    line-height: 40px;
   }
 }
 
@@ -841,8 +849,14 @@ p {
 }
 
 @media (max-width: 767px) {
+  .hero-section-wrapper-2 .hero-style-2 .hero-content-wrapper .buttons {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+
   .hero-section-wrapper-2 .hero-style-2 .hero-content-wrapper .buttons .button {
-    margin-right: 35px;
+    margin-right: 0;
+    margin-bottom: 15px;
   }
 }
 
@@ -997,6 +1011,13 @@ p {
   transition: all 0.3s ease-out 0s;
 }
 
+@media (max-width: 767px) {
+  .team-style-1 .single-team {
+    padding: 20px;
+    margin-bottom: 20px;
+  }
+}
+
 .team-style-1 .single-team:hover {
   box-shadow: 0px 5px 25px rgba(76, 89, 57, 0.3);
 }
@@ -1045,6 +1066,12 @@ p {
 @media only screen and (min-width: 992px) and (max-width: 1199px) {
   .pricing-style-1 .single-pricing {
     padding: 45px 25px;
+  }
+}
+
+@media (max-width: 767px) {
+  .pricing-style-1 .single-pricing {
+    padding: 30px 20px;
   }
 }
 
@@ -1163,6 +1190,13 @@ p {
   justify-content: space-around;
   align-items: center;
   flex-wrap: wrap;
+}
+
+@media (max-width: 767px) {
+  .about-style-3 .about-content-wrapper .counter-up-wrapper {
+    flex-direction: column;
+    padding: 15px 0px;
+  }
 }
 
 .about-style-3 .about-content-wrapper .counter-up-wrapper .single-counter {
@@ -2789,6 +2823,19 @@ button:focus {
   display: flex;
   flex-direction: column;
   overflow: hidden;
+}
+
+@media (max-width: 767px) {
+  #chat-widget {
+    bottom: 10px;
+    right: 10px;
+  }
+
+  #chat-window {
+    width: 280px;
+    height: 350px;
+    bottom: 60px;
+  }
 }
 
 #chat-header {
