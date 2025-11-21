@@ -401,6 +401,13 @@ p {
   font-weight: 400;
 }
 
+.button-sm2 {
+  height: 34px;
+  font-size: 13px;
+  font-weight: 400;
+}
+
+
 /* ============================= 
     HEADER-2 CSS
 ================================ */
@@ -750,7 +757,7 @@ p {
 }
 
 .hero-section-wrapper-2 .hero-style-2 .hero-content-wrapper {
-  padding: 300px 0;
+  padding: 280px 0;
 }
 
 @media only screen and (min-width: 1200px) and (max-width: 1399px) {
