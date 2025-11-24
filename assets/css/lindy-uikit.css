@@ -50,16 +50,16 @@ button {
 .scroll-top {
   width: 45px;
   height: 45px;
-  background: #4C5939;
+  background: #4c593900;
   display: none;
   justify-content: center;
   align-items: center;
-  font-size: 18px;
-  color: #ffffff;
+  font-size: 25px;
+  color: #3f6b3b;
   border-radius: 5px;
   position: fixed;
-  bottom: 30px;
-  right: 30px;
+  bottom: 100px;
+  right: 18px;
   z-index: 9;
   cursor: pointer;
   transition: all 0.3s ease-out 0s;
