@@ -2819,11 +2819,11 @@ button:focus {
 }
 
 #chat-window {
-  position: absolute;
-  bottom: 80px;
-  right: 0;
-  width: 300px;
-  height: 400px;
+  position: fixed;
+  top: 0;
+  right: 20px;
+  width: 350px;
+  height: calc(100vh - 90px);
   background: white;
   border-radius: 10px;
   box-shadow: 0 4px 20px rgba(0, 0, 0, 0.3);
@@ -2839,9 +2839,9 @@ button:focus {
   }
 
   #chat-window {
-    width: 280px;
-    height: 350px;
-    bottom: 60px;
+    width: 320px;
+    height: calc(100vh - 80px);
+    right: 10px;
   }
 }
 
@@ -2852,6 +2852,14 @@ button:focus {
   text-align: center;
   position: relative;
   font-weight: 600;
+}
+
+#chat-minimize {
+  position: absolute;
+  right: 35px;
+  top: 10px;
+  cursor: pointer;
+  font-size: 20px;
 }
 
 #chat-close {

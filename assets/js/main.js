@@ -86,6 +86,7 @@
     const chatButton = document.getElementById('chat-button');
     const chatWindow = document.getElementById('chat-window');
     const chatClose = document.getElementById('chat-close');
+    const chatMinimize = document.getElementById('chat-minimize');
     const chatInput = document.getElementById('chat-input');
     const chatSend = document.getElementById('chat-send');
     const chatMessages = document.getElementById('chat-messages');
@@ -93,6 +94,10 @@
 
     chatButton.addEventListener('click', () => {
         chatWindow.style.display = chatWindow.style.display === 'none' ? 'flex' : 'none';
+    });
+
+    chatMinimize.addEventListener('click', () => {
+        chatWindow.style.display = 'none';
     });
 
     chatClose.addEventListener('click', () => {
